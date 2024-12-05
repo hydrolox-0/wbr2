@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let lastY = 0;
 
     const usernameDisplay = document.getElementById('usernameDisplay');
-    const loginBtn = document.getElementById('loginBtn');
+    const signinBtn = document.getElementById('signinBtn');
     const logoutBtn = document.getElementById('logoutBtn');
 
         // Check if a user is logged in
@@ -28,12 +28,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (loggedInUser) {
         // Update UI to show username and logout button
         usernameDisplay.textContent = `Welcome, ${loggedInUser.name}!`;
-        loginBtn.style.display = 'none';
+        signinBtn.style.display = 'none';
         logoutBtn.style.display = 'block';
     } else {
-        // If not logged in, show login button
+        // If not logged in, show signin button
         usernameDisplay.textContent = '';
-        loginBtn.style.display = 'block';
+        signinBtn.style.display = 'block';
         logoutBtn.style.display = 'none';
     }
 
