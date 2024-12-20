@@ -90,7 +90,7 @@
                 <button type="submit" class="btn btn-primary w-100">Sign Up</button>
             </form>
             <div class="text-center mt-3">
-                <p>Already have an account? <a href="Signin.html" class="text-primary">Sign in</a></p>
+                <p>Already have an account? <a href="signin.jsp" class="text-primary">Sign in</a></p>
             </div>
         </div>
     </div>
@@ -148,7 +148,7 @@
                     users.push({ name: name.value.trim(), email: email.value.trim(), password: password.value.trim() });
                     localStorage.setItem('users', JSON.stringify(users));
                     alert('Sign-up successful! Redirecting to Sign-in page.');
-                    window.location.href = 'signin.html';
+                    window.location.href = 'signin.jsp';
                 }
             });
         });
