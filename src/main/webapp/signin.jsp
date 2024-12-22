@@ -71,12 +71,12 @@
                                 <div class="invalid-feedback">Please enter your password.</div>
                             </div>
                             <button type="submit" class="btn btn-primary w-100 mb-3">Sign In</button>
-                            <a href="signup.jsp" class="btn btn-outline-secondary w-100">Sign Up</a>
+                            <a href="/whitebaord-app/register" class="btn btn-outline-secondary w-100">Sign Up</a>
                         </form>
                     </div>
                 </div>
                 <div class="mt-3 text-center">
-                    <a href="index.jsp">Back to Whiteboard</a>
+                    <a href="/whitebaord-app/board">Back to Whiteboard</a>
                 </div>
             </div>
         </div>
@@ -119,7 +119,7 @@
             // Simulate successful Signin
             localStorage.setItem('loggedInUser', JSON.stringify({ name: username, color: getRandomColor() }));
             alert(`Signin successful! Welcome, ${username}`);
-            window.location.href = 'index.jsp';
+            window.location.href = '/whitebaord-app/board';
         });
 
         function getRandomColor() {

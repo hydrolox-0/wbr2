@@ -91,7 +91,7 @@
                 <button type="submit" class="btn btn-primary w-100">Sign Up</button>
             </form>
             <div class="text-center mt-3">
-                <p>Already have an account? <a href="signin.jsp" class="text-primary">Sign in</a></p>
+                <p>Already have an account? <a href="/whitebaord-app/login" class="text-primary">Sign in</a></p>
             </div>
         </div>
     </div>
